@@ -45,11 +45,13 @@ public class Watch {
 				newX=0;
 				
 				resx = Math.hypot(xa, y);
-				res=meter-resx ; 
+				res=meter-resx ;
+				res = Math.abs(res);
 				if (debugging) {
 //				System.out.println("The distance "+ String.valueOf(resx));
 				}
 				difx = res;
+				
 				System.out.println("The dial reads "+ String.valueOf(difx));
 				x= xa;		
 				if (debugging) {
@@ -88,6 +90,7 @@ public class Watch {
 				newXn=0;
 				resxn = Math.hypot(xa, y);
 				res= meter-resxn; 
+				res = Math.abs(res);
 				if (debugging) {
 //					res = Math.abs(res);
 //					System.out.println("The distance "+ String.valueOf(resxn));
@@ -107,6 +110,7 @@ public class Watch {
 				
 				resyn = Math.hypot(x, ya);
 				res= meter-resyn; 
+				res = Math.abs(res);
 				if (debugging) {
 //					res = Math.abs(res);
 //					System.out.println("The distance "+ String.valueOf(resyn));
